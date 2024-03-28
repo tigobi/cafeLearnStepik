@@ -1,5 +1,7 @@
 package com.example.cafe;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -15,5 +17,11 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
 
+    }
+
+    public static Intent newIntent(Context context, String userName) {
+        Intent intent = new Intent(context, OrderActivity.class);
+        intent.putExtra("name", userName);
+        return intent;
     }
 }
