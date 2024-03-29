@@ -84,13 +84,13 @@ public class OrderActivity extends AppCompatActivity {
     private void onMadeOrder() {
         ArrayList<String> additives = new ArrayList<>();
         if (cbSugar.isChecked()) {
-            additives.add(cbSugar.toString());
+            additives.add(String.valueOf(R.string.sugar));
         }
         if (cbMilk.isChecked()) {
-            additives.add(cbMilk.toString());
+            additives.add(String.valueOf(R.string.milk));
         }
         if (rbTea.isChecked() && cbLemon.isChecked()) {
-            additives.add(cbLemon.toString());
+            additives.add(String.valueOf(R.string.lemon));
         }
         String drinkType = "";
         if (rbTea.isChecked()) {
