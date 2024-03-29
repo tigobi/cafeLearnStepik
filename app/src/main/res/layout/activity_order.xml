@@ -131,7 +131,9 @@
         android:entries="@array/types_of_coffee"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/buttonMakeOrder"
-        app:layout_constraintTop_toBottomOf="@id/textViewDrinkType" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDrinkType"
+        app:layout_constraintVertical_bias="0.466"
+        tools:layout_editor_absoluteX="8dp" />
 
     <Button
         android:id="@+id/buttonMakeOrder"
